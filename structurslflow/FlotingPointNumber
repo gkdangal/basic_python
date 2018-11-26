@@ -1,0 +1,15 @@
+# floating point number is a just a number with decimal values
+
+# This is a direct way of taking number from user
+
+# my_val = float(input('enter the floating number:'))
+
+# basic way of taking input from user
+my_number = input('Enter the floating number: ')
+#
+# converting input string into floating using following command
+
+my_number = float(my_number)
+
+print("round to 2 decimal : {:.5f}".format(my_number))
+

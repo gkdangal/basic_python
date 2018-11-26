@@ -1,0 +1,51 @@
+# how tall is the tree Printing christmos tree
+'''
+Enter the height of tree between 3 to 10: 10
+         #
+        ###
+       #####
+      #######
+     #########
+    ###########
+   #############
+  ###############
+ #################
+###################
+         #
+
+Process finished with exit code 0
+'''
+
+# get the number of rows for tree and convert string input to integer
+
+tree_height = int(input('Enter the height of tree between 3 to 10: '))
+
+# Get the starting spaces for the top of the tree
+
+# print("", end ="") this is not force to print new line
+
+# print hashes
+
+# spaces
+spaces = tree_height - 1
+
+# hashes
+hashes = 1
+
+# stump spaces
+
+stump_spaces = tree_height - 1
+
+while tree_height != 0:
+    for i in range(spaces):
+        print(' ', end="")
+    for i in range(hashes):
+        print('#', end="")
+    print()
+    spaces -= 1
+    hashes += 2
+    tree_height -= 1
+for i in range(stump_spaces):
+    print(' ', end="")
+print('#')
+
